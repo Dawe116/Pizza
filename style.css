@@ -27,6 +27,11 @@ h2 {
     margin-bottom: 10px;
 }
 
+#idekell{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+}
+
 
 
 #kiemelt{
