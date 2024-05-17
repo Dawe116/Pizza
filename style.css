@@ -2,13 +2,14 @@ body{
  background-image: url("../img/backgrond.jpg");
 }
 nav{
-    background-color: black;
+    background-color: aqua;
 }
 
 header {
     background-color: aqua;
     padding: 50px 20px;
     text-align: center;
+    background-image: url("../img/header.jpg");
 }
 
 header h1 {
@@ -23,8 +24,9 @@ section {
     margin-bottom: 30px;
 }
 
-h2 {
-    margin-bottom: 10px;
+h2,h1,p {
+    color: black;
+    background-color: aqua;
 }
 
 #idekell{
@@ -32,17 +34,23 @@ h2 {
     grid-template-columns: repeat(3,2fr);
 }
 
-
-
 #kiemelt{
     size: 2rem;
 }
 
-
-
 #search{
     background-color: whitesmoke;
 }
+
 #kereses{
     color: black;
+}
+#bal{
+    float: right;
+}
+
+.card{
+    border-radius: 15%;
+    background-color: aqua;
+
 }
