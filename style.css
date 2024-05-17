@@ -3,6 +3,7 @@ body{
 }
 nav{
     background-color: aqua;
+    margin-bottom: 10px;
 }
 
 header {
@@ -31,7 +32,8 @@ h2,h1,p {
 
 #idekell{
     display: grid;
-    grid-template-columns: repeat(3,2fr);
+    grid-template-columns: repeat(4,20rem);
+    
 }
 
 #kiemelt{
@@ -46,7 +48,8 @@ h2,h1,p {
     color: black;
 }
 #bal{
-    float: right;
+display: block;;
+
 }
 
 .card{
