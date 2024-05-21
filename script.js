@@ -1,19 +1,49 @@
 fetch("https://pizza.kando-dev.eu/Pizza").then((res)=> res.json())
-.then((datas) => {
-    console.log(datas);
-    let contentHTML = document.getElementById('idekell');
-    for(const data of datas){
-        
+.then((data) => {
+    console.log(data);
 
-            contentHTML.innerHTML +=   
-            `<div class="card" style="width: 18rem;">
-              <img src="${data.kepURL}" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">${data.name}</h5>
-                <p class="card-text">1800 FT</p>
-                <p class="card-text">Glutén free: ${data.isGlutenFree}</p>
-                <a href="#" class="btn btn-primary">Kosárba</a>
-              </div>
-            </div>`
+   
+    for(let i = 0; i < data.length; i++){
+
+    document.getElementById('idekell').innerHTML += `  <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src= ${data[i].kepURL} alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>${data[i].name}</h1>
+          <p>${data[i].isGlutenFree ? "Igen":"Nem"}</p>
+          <Button onclick = "Reszletek(${data[i].id})"><p>Részletek</p></Button>
+        </div>
+      </div>
+    </div>`
     }
-})
+  })
+
+
+
+  function Reszletek(id){
+    console.log(id);
+    fetch("https://pizza.kando-dev.eu/Pizza"+ id)
+    .then((res)=> res.json())
+    .then((data) => {
+        console.log(data);
+    
+       
+
+    
+        document.getElementById('idekell').innerHTML += `  <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src= ${data[i].kepURL} alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>${data[i].name}</h1>
+              <p>${data[i].isGlutenFree ? "Igen":"Nem"}</p>
+            </div>
+          </div>
+        </div>`
+        })
+      }
+    
+  
