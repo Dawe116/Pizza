@@ -1,0 +1,63 @@
+body{
+ background-image: url("../img/header.jpg");
+}
+nav{
+    background-color: rgb(176, 152, 121);
+    margin-bottom: 10px;
+}
+
+header {
+    padding: 50px 20px;
+    text-align: center;
+    background-image: url("../img/background.jpg");
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+main {
+    padding: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2,h1{
+    color: black;
+}
+
+p{
+  color: rgb(176, 152, 121);
+}
+
+span{
+  color: black;
+  background-color: rgb(176, 152, 121);
+}
+
+
+
+#idekell{
+    display: grid;
+    grid-template-columns: repeat(3,30rem);
+    
+}
+
+#kiemelt{
+    size: 2rem;
+}
+
+#search{
+    background-color: whitesmoke;
+}
+
+#kereses{
+    color: black;
+}
+#bal{
+display: block;
+
+}
+

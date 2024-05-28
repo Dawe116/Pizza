@@ -1,66 +1,29 @@
 body{
- background-image: url("../img/backgrond.jpg");
-}
-nav{
-    background-color: aqua;
-    margin-bottom: 10px;
-}
-
-header {
-    background-color: aqua;
-    padding: 50px 20px;
-    text-align: center;
     background-image: url("../img/header.jpg");
-}
+   }
+   nav{
+       background-color: rgb(176, 152, 121);
+       margin-bottom: 10px;
+   }
+   
+   header {
+       padding: 50px 20px;
+       text-align: center;
+       background-image: url("../img/background.jpg");
+   }
 
-header h1 {
-    margin-bottom: 5px;
-}
-
-main {
-    padding: 10px;
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-h2,h1,p {
+   h1{
     color: black;
-    background-color: aqua;
-}
+   }
 
-#idekell{
-    display: grid;
-    grid-template-columns: repeat(3,30rem);
-    
-}
 
-#kiemelt{
-    size: 2rem;
-}
-
-#search{
-    background-color: whitesmoke;
-}
-
-#kereses{
-    color: black;
-}
-#bal{
-display: block;
-
-}
-img{
-size: 3rem;
-}
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+   /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
     width: 300px;
     height: 200px;
-    border: 1px solid #f1f1f1;
+    margin-bottom: 5rem;
+
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
@@ -96,7 +59,7 @@ size: 3rem;
   
   /* Style the back side */
   .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
+    background-color: rgb(176, 152, 121);
+    color: black;
     transform: rotateY(180deg);
   }
