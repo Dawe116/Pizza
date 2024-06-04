@@ -5,9 +5,8 @@ fetch("https://pizza.kando-dev.eu/Pizza").then((res)=> res.json())
    
     for(let i = 0; i < data.length; i++){
 
-    document.getElementById('container').innerHTML += `  <div class = "col-md-3">
-    <div class = "row">
-      <div class="flip-card">
+    document.getElementById('container').innerHTML += `<div class="col-md-3">
+    <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src= ${data[i].kepURL} alt="Avatar">
@@ -19,8 +18,7 @@ fetch("https://pizza.kando-dev.eu/Pizza").then((res)=> res.json())
           </div>
         </div>
        </div>
-      </div>
-    </div>`
+       </div>`
     }
   })
 
